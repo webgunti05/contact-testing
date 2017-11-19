@@ -1,0 +1,26 @@
+{
+  "name": "testcontact",
+  "version": "1.0.0",
+  "description": "contact",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webgunti05/contact-testing.git"
+  },
+  "keywords": [
+    "contact"
+  ],
+  "author": "anjaneyulu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webgunti05/contact-testing/issues"
+  },
+  "homepage": "https://github.com/webgunti05/contact-testing#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4"
+  }
+}
