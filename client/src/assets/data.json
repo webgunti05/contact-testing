@@ -1,0 +1,45 @@
+{
+    "postItems" : [
+        {
+            "postbg" : "http://www.autorox.co/wp-content/uploads/2014/09/22.jpg",
+            "title" : "Autorox",
+            "date" : "December 25, 2017"
+        },
+        {
+            "postbg" : "http://www.autorox.co/wp-content/uploads/2014/09/25.jpg",
+            "title" : "Autorox",
+            "date" : "December 25, 2017"
+        },
+        {
+            "postbg" : "http://www.autorox.co/wp-content/uploads/2014/09/22.jpg",
+            "title" : "Autorox",
+            "date" : "December 25, 2017"
+        }
+    ],
+
+    "postBread" : [
+        {
+            "itemBg" : "assets/images/value_icon.png",
+            "itemTit" : "Trust Worthy"
+        },
+        {
+            "itemBg" : "assets/images/secure_icon.png",
+            "itemTit" : "Secure"
+        },
+        {
+            "itemBg" : "assets/images/quality_icon.png",
+            "itemTit" : "Quality"
+        },
+        {
+            "itemBg" : "assets/images/exp_icon.png",
+            "itemTit" : "Experience"
+        },
+        {
+            "itemBg" : "assets/images/value_icon.png",
+            "itemTit" : "Value of Money"
+        }
+    ]
+
+    
+}
+

@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+*{ margin:0px; padding: 0px;}
+body{ background-color: #fff; font-family: 'Open Sans', sans-serif; padding: 0px; margin: 0px;}
+.clr{ clear: both;}
