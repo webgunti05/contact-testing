@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxCarouselModule } from 'ngx-carousel';
+import 'hammerjs';
 
 
 import { AppComponent } from './app.component';
@@ -39,6 +41,7 @@ import { WorksComponent } from './works/works.component';
     HttpModule,
     Ng2CarouselamosModule,
     ReactiveFormsModule,
+    NgxCarouselModule,
     RouterModule.forRoot([
       { path : '', redirectTo : 'Home', pathMatch: 'full'},
       { path : 'Home', component : MainpageComponent},

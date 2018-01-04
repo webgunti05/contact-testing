@@ -145,3 +145,18 @@
 </div>
 
 <!--owel carousel-->
+
+<div class="container">
+  <ngx-carousel
+      [inputs]="carouselTile"
+      (carouselLoad)="carouselTileLoad($event)">
+ 
+            <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
+                <!-- <h1>{{Tile + 1}}</h1> -->
+                <img [src]="Tile.name">
+            </ngx-tile>
+ 
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+    </ngx-carousel>
+</div>

@@ -54,15 +54,16 @@ nav ul li:hover .submenu{ visibility: visible; opacity:1; -webkit-opacity:1; -mo
 
 /*header right2*/
 .header_right2{ float: right;}
-.header_frm{ float: left; width: 100%; position: absolute; max-width: 600px; display: block;
+.header_frm{ float: left; width: 100%; position: absolute; max-width: 680px; display: block;
     margin:0px auto; left: 0; right: 0; top: 15px;
 }
 .hdrfrm_inp{
-    width: 45%; float: left; margin-right: 1%; border-radius: 2px; border: none; height: 40px;
+    width: 43%; float: left; margin-right: 1%; border-radius: 2px; border: none; height: 40px;
     border: 1px solid #ddd; padding: 0 20px; font-size: 13px; color: #999; outline: none;
 }
 .righter_authsbtns{ position: absolute; right: 0;}
 .rsp_searcher{ display: none;}
+.sbtn2{ width: 80px;}
 .mob_frm{ display: none;}
 .btm_menulinks{ margin-top:15px;}
 .colpseMenu ul li{ padding: 12px 20px;}
