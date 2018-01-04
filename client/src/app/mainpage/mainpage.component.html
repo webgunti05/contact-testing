@@ -153,10 +153,26 @@
  
             <ngx-tile NgxCarouselItem *ngFor="let Tile of carouselTileItems">
                 <!-- <h1>{{Tile + 1}}</h1> -->
-                <img [src]="Tile.name">
+                <img [src]="Tile.tilepath" class="tilebg">
+                <div class="owlcardata">
+                  <h3 class="gar-tittle">{{Tile.tilehdng}}</h3>
+                  <div><span class="loc"><i class="fa fa-map-marker" aria-hidden="true"></i> {{Tile.tileloc}}</span>
+                     <span class="phn"><i class="fa fa-phone" aria-hidden="true"></i> {{Tile.tilephone}}</span>
+                  </div>
+                  <div>
+                     
+                    <span class="star rat">
+                        <span><i class="fa fa-star orange-color"></i></span>
+                        <span><i class="fa fa-star orange-color"></i></span>
+                        <span><i class="fa fa-star orange-color"></i></span>
+                        <span><i class="fa fa-star orange-color"></i></span>
+                        <span><i class="fa fa-star-o orange-color rathdn"></i></span>{{Tile.tielrating}}</span></div>
+                </div>
+                <span class="hgt"></span>
             </ngx-tile>
  
-          <button NgxCarouselPrev class='leftRs'>&lt;</button>
-          <button NgxCarouselNext class='rightRs'>&gt;</button>
+          <button NgxCarouselPrev class='leftRs'><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <button NgxCarouselNext class='rightRs'><i class="fa fa-angle-right" aria-hidden="true"></i></button>
     </ngx-carousel>
 </div>
+

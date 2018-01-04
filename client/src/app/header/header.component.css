@@ -63,7 +63,7 @@ nav ul li:hover .submenu{ visibility: visible; opacity:1; -webkit-opacity:1; -mo
 }
 .righter_authsbtns{ position: absolute; right: 0;}
 .rsp_searcher{ display: none;}
-.sbtn2{ width: 80px;}
+.sbtn2{ width: 80px; background-color: #1ebef0!important; border: none!important; height: 40px;}
 .mob_frm{ display: none;}
 .btm_menulinks{ margin-top:15px;}
 .colpseMenu ul li{ padding: 12px 20px;}
