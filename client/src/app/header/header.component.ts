@@ -1,6 +1,7 @@
 import { Component,HostListener,Inject } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { DOCUMENT } from "@angular/platform-browser";
+import { Router } from '@angular/router';
 // import { WINDOW } from "../services/window.service";
 
 @Component({
@@ -36,7 +37,7 @@ export class HeaderComponent{
     public rspBtns : Boolean;
 
     // constructor(@Inject(DOCUMENT) private document: Document, @Inject(WINDOW) private window: Window){
-        constructor(@Inject(DOCUMENT) private document: Document){
+        constructor(@Inject(DOCUMENT) private document: Document, private router: Router){
         this.siteName = "assets/Autoroxlogo.png";
         this.hideMenu = true;
         this.hdrMenu2 = false;
@@ -53,6 +54,10 @@ export class HeaderComponent{
     openSearchForm(){
         this.clicked = !this.clicked;
     }
+
+    goToSearch(){
+        return this.router.navigate(['/', 'search'])
+      }
     
 
     @HostListener("window:scroll", [])

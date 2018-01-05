@@ -1,0 +1,66 @@
+<div class="container-fluid prodct_wrap">
+    
+      <div class="col-12 zerocol">
+          <div class="radbtns_wrapper">
+               <form class="filter_form src-filter">
+                  <form role="form">
+                      <fieldset>
+                          <div class="radio radio-info radio-inline">
+                              <input type="radio" id="inlineRadio1" value="General Service &amp; Repair" name="radioInline" [(ngModel)]="radioInline" checked="">
+                              <label for="inlineRadio1"> General Service &amp; Repair </label>
+                          </div>
+                          <div class="radio radio-inline">
+                              <input type="radio" id="inlineRadio2" value="Detailing" name="radioInline" [(ngModel)]="radioInline">
+                              <label for="inlineRadio2"> Detailing </label>
+                          </div>
+                          <div class="radio radio-inline">
+                              <input type="radio" id="inlineRadio3" value="Tyres &amp; Batteries" name="radioInline" [(ngModel)]="radioInline">
+                              <label for="inlineRadio3"> Tyres &amp; Batteries </label>
+                          </div>
+                          <div class="radio radio-inline">
+                              <input type="radio" id="inlineRadio4" value="Denting &amp; painting" name="radioInline" [(ngModel)]="radioInline">
+                              
+                              <label for="inlineRadio4"> Denting &amp; painting </label>
+                          </div>
+                          <div class="dropdown">
+                              <button type="button" (click)="openDropDownList()" class="dropbtn">Other Items 
+                                <span class="downarrow"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                              </button>
+                              <div id="myDropdown" class="dropdown-content" *ngIf="dropOpen">
+                                  <a href="#">Link 1</a>
+                                  <a href="#">Link 2</a>
+                                  <a href="#">Link 3</a>
+                              </div>
+                          </div>
+                      </fieldset>
+                  </form>
+               </form>
+          </div>
+      </div>
+
+</div>
+
+<!--products data-->
+
+<div class="container-fluid gray-bg">
+  <div class="row">
+  <div class="col-12">
+
+    <div class="col-12 col-md-8">
+      <div class="matched_data">
+          <div class="nice-title">301 Matches found for: Autorox garages in <span>Hyderabad</span></div>
+
+          <select class="form-control sortselecter"  name="sortby">
+            <option value="">Default Sorting</option>
+            <option *ngFor="let f of filterList" value="{{f.value}}">{{f.text}}</option>
+          </select>
+          <div class="clr"></div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-4"></div>
+
+  </div>
+  </div>
+</div>

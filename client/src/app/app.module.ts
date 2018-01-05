@@ -19,7 +19,10 @@ import { FooterComponent } from './footer/footer.component';
 import { PostService } from './services/post.service';
 import { AboutComponent } from './about/about.component';
 import { WorksComponent } from './works/works.component';
+import { SearchComponent } from './search/search.component';
+import { ProductComponent } from './product/product.component';
 // import { WINDOW_PROVIDERS } from './services/window.service';
+import { FilterService } from './services/data.service';
 
 
 @NgModule({
@@ -32,7 +35,9 @@ import { WorksComponent } from './works/works.component';
     MainpageComponent,
     FooterComponent,
     AboutComponent,
-    WorksComponent
+    WorksComponent,
+    SearchComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -49,12 +54,15 @@ import { WorksComponent } from './works/works.component';
       { path : 'About', component : AboutComponent},
       { path : 'Works', component : WorksComponent},
       { path : 'ForWorkshops', component : ForworkshopsComponent},
-      { path : 'QuickServices', component : QuickservicesComponent}
+      { path : 'QuickServices', component : QuickservicesComponent},
+      { path : 'search', component : SearchComponent},
+      { path : 'Product', component : ProductComponent}
     ])
   ],
   providers: [
     PostService,
     // WINDOW_PROVIDERS
+    FilterService
   ],
   bootstrap: [AppComponent]
 })

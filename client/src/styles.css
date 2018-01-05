@@ -3,3 +3,6 @@
 *{ margin:0px; padding: 0px;}
 body{ background-color: #fff; font-family: 'Open Sans', sans-serif; padding: 0px; margin: 0px;}
 .clr{ clear: both;}
+.gray-bg {
+    background: #f1f0f6;
+}

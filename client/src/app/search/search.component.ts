@@ -3,19 +3,20 @@ import { NgxCarousel } from 'ngx-carousel';
 import { PostService } from '../services/post.service';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'Mainpage',
-  templateUrl: './mainpage.component.html',
-  styleUrls: ['./mainpage.component.css']
+  selector: 'search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
-export class MainpageComponent implements OnInit {
+export class SearchComponent implements OnInit {
 
   items: Array<any> = [];
   postBread : Array<any>
   public carouselTileItems: Array<any>;
   public carouselTile: NgxCarousel;
 
-  constructor(private breadSvc: PostService, private tileSvc: PostService, private router: Router) {
+  constructor(private breadSvc: PostService, private tileSvc: PostService, private router : Router) { 
     this.items = [
       { name: 'assets/images/slide1.jpg' },
       { name: 'assets/images/slide1.jpg' },
@@ -31,10 +32,17 @@ export class MainpageComponent implements OnInit {
       { name: 'assets/images/slide1.jpg' }
      
     ];
-
     this.getPostBread();
     this.getTileItems();
 
+  }
+
+  getPostBread(){
+    return this.breadSvc.getPostBread()
+    .subscribe(result => {
+      console.log(result);
+      this.postBread = result.postBread;
+    })
   }
 
   ngOnInit() {
@@ -65,14 +73,6 @@ export class MainpageComponent implements OnInit {
  
   }
 
-  getPostBread(){
-    return this.breadSvc.getPostBread()
-    .subscribe(result => {
-      console.log(result);
-      this.postBread = result.postBread;
-    })
-  }
-
   getTileItems(){
     return this.tileSvc.getTileItems()
     .subscribe(result => {
@@ -81,8 +81,9 @@ export class MainpageComponent implements OnInit {
     })
   }
 
-  goToSearch(){
-    return this.router.navigate(['/', 'search'])
+  
+  goToProductPage(){
+    return this.router.navigate(['/', 'Product'])
   }
 
 }

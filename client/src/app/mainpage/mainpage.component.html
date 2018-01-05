@@ -42,7 +42,9 @@
                 </div>
                 
 
-                <button type="submit" class="btn btn-primary srch_btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button type="submit" class="btn btn-primary srch_btn" (click)="goToSearch()" >
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
                 
             </form>
         </div>
@@ -146,7 +148,7 @@
 
 <!--owel carousel-->
 
-<div class="container">
+<div class="container carous_wrap">
   <ngx-carousel
       [inputs]="carouselTile"
       (carouselLoad)="carouselTileLoad($event)">
