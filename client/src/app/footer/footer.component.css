@@ -53,3 +53,26 @@
 .posting_item{ margin-bottom: 50px; margin-top: 15px;}
 .rft_space p{ color: #999; padding: 0px!important; margin: 0px!important; }
 .rft_space small{ text-align: right; color: #999;}
+
+.copyright { padding: 15px 0 0px; border-top: 1px solid rgba(255,255,255,0.1);}
+.text-left { text-align: left!important;}
+.text-right { text-align: right!important;}
+.copyright ul li {
+    padding: 0px;
+    display: inline-block;
+}
+.text-left p{ font-size: 14px; color: #fff;  font-weight: normal;}
+.copyright ul li a {
+    color: #909090;
+    text-transform: capitalize;
+    padding: 0px 3px;
+}
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    font-size: 14px;
+}
+.list-inline a{ text-decoration: none;}
+.copyright a {
+    color: #db2d2e;
+}

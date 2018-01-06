@@ -20,7 +20,7 @@
 .dropdown-content{position:absolute;background-color:#f9f9f9;min-width:160px;overflow:auto;box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);z-index:9999}.dropdown-content a{color:#000;padding:12px 16px;text-decoration:none;display:block}
 .dropdown a:hover{ position: static;}.show{display:block}
 .dropbtn{ outline: none;}
-.nice-title{ display: inline-block;}
+.nice-title{ display: inline-block; margin-left: 15px; font-size: 14px;}
 .nice-title span { color: #00afef; font-weight: 100;}
 .zerocol{ padding-left: 0px; padding-right: 0px;}
 
@@ -30,3 +30,6 @@
     vertical-align: middle; -webkit-writing-mode: horizontal-tb; background: none; font-size: 13px;
     padding: 5px 15px; cursor: pointer; width: 100%; max-width: 160px; float: right;
 }
+
+/*inner product data*/
+.inrpro_data{ background-color: #fff; padding: 15px 0px; margin: 15px 0px;}

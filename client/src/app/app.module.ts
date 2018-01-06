@@ -23,6 +23,10 @@ import { SearchComponent } from './search/search.component';
 import { ProductComponent } from './product/product.component';
 // import { WINDOW_PROVIDERS } from './services/window.service';
 import { FilterService } from './services/data.service';
+import { ProductService } from './services/product.service';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+
+
 
 
 @NgModule({
@@ -37,7 +41,8 @@ import { FilterService } from './services/data.service';
     AboutComponent,
     WorksComponent,
     SearchComponent,
-    ProductComponent
+    ProductComponent,
+    ProductdetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -56,13 +61,16 @@ import { FilterService } from './services/data.service';
       { path : 'ForWorkshops', component : ForworkshopsComponent},
       { path : 'QuickServices', component : QuickservicesComponent},
       { path : 'search', component : SearchComponent},
-      { path : 'Product', component : ProductComponent}
+      { path : 'Product', component : ProductComponent},
+      { path : 'Productdetails', component : ProductdetailsComponent}
+      
     ])
   ],
   providers: [
     PostService,
     // WINDOW_PROVIDERS
-    FilterService
+    FilterService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })
