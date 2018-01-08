@@ -17,6 +17,8 @@ export class ProductComponent implements OnInit {
   private timings : Array<any>;
   User : any;
   private open_bookapoint : boolean;
+  private searchBrands : Array<any>;
+  private searchCities : Array<any>;
 
 
   constructor(private prodSvc : FilterService, private prolistSvc : ProductService) {
@@ -30,6 +32,9 @@ export class ProductComponent implements OnInit {
     this.carsList = ["Maruthi Suzuki", "Automobile Part Dealers", "Services-Ford", "Services-Honda", "Automobile Battery Dealers-Exide"];
     this.serviceList = [" Maruti Suzuki", " Automobile Part Dealers", " Services-Ford", "Services-Honda", " Automobile Battery Dealers-Exide"];
     this.timings = ["02:00PM - 04:00PM", "03:00PM - 05:00PM", "04:00PM - 06:00PM"];
+
+    this.searchBrands = ["Maruthi Suzuki", "Hyundai", "Volkswagen", "Tata", "Toyota"];
+    this.searchCities = ["Hyderabad", "Delhi", "Mumbai", "Bangalore", "Ahmedabad"];
    }
 
   ngOnInit() {
@@ -37,9 +42,11 @@ export class ProductComponent implements OnInit {
 
   }
   openBookApointment(){
-    this.open_bookapoint = !this.open_bookapoint;
+    this.open_bookapoint = true;
   }
-
+  closeBookApointment(){
+    this.open_bookapoint = false;
+  }
   openDropDownList(){
     this.dropOpen = !this.dropOpen;
   }
@@ -61,6 +68,12 @@ export class ProductComponent implements OnInit {
   }
   gettimingsList(){
     return this.timings;
+  }
+  getSearchBrands(){
+    return this.searchBrands;
+  }
+  getSearchCities(){
+    return this.searchCities;
   }
 
 }
