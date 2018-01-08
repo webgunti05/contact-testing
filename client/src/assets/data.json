@@ -128,16 +128,47 @@
     ],
 
     "ProductList" : [
-        { "gricpath" : "assets/images/grg_pic.png"},
-        { "prodTitle" : "Deccan Motor Cycle And Scooter Garage"},
-        { "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, "},
-        { "prodSubTitle" : "Services"},
-        { "prodRating" : "4.5/5 (10)"},
-        { "prodFeedback" : "120 Feedback for Users"},
-        { "prodLocation" : "Madhapur, Hyderabad"},
-        { "prodTiming" : "9:00 AM - 9:30 PM"}
+        { 
+        "gricpath" : "assets/images/grg_pic.png",
+        "prodTitle" : "Deccan Motor Cycle And Scooter Garage",
+        "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, ",
+         "prodSubTitle" : "Services",
+        "prodRating" : "4.5/5 (10)",
+         "prodFeedback" : "120 Feedback for Users",
+        "prodLocation" : "Madhapur, Hyderabad",
+         "prodTiming" : "9:00 AM - 9:30 PM"
+        },
+        { 
+        "gricpath" : "assets/images/grg_pic.png",
+        "prodTitle" : "Deccan Motor Cycle And Scooter Garage",
+        "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, ",
+         "prodSubTitle" : "Services",
+        "prodRating" : "4.5/5 (10)",
+         "prodFeedback" : "120 Feedback for Users",
+        "prodLocation" : "Madhapur, Hyderabad",
+         "prodTiming" : "9:00 AM - 9:30 PM"
+        },
+        { 
+        "gricpath" : "assets/images/grg_pic.png",
+        "prodTitle" : "Deccan Motor Cycle And Scooter Garage",
+        "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, ",
+         "prodSubTitle" : "Services",
+        "prodRating" : "4.5/5 (10)",
+         "prodFeedback" : "120 Feedback for Users",
+        "prodLocation" : "Madhapur, Hyderabad",
+         "prodTiming" : "9:00 AM - 9:30 PM"
+        },
+        { 
+        "gricpath" : "assets/images/grg_pic.png",
+        "prodTitle" : "Deccan Motor Cycle And Scooter Garage",
+        "proddesc" : "An authorised sales and service dealership, Aakash Motors in Hyderabad has been in the business ever since the year 2006. In a short span of time, ",
+         "prodSubTitle" : "Services",
+        "prodRating" : "4.5/5 (10)",
+         "prodFeedback" : "120 Feedback for Users",
+        "prodLocation" : "Madhapur, Hyderabad",
+         "prodTiming" : "9:00 AM - 9:30 PM"
+        }
     ]
 
     
 }
-
