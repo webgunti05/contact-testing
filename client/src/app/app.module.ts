@@ -7,7 +7,8 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
-import {CalendarModule} from 'primeng/primeng';
+import { FilterPipe }from './filter.pipe';
+
 
 
 
@@ -44,7 +45,8 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     WorksComponent,
     SearchComponent,
     ProductComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,6 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     Ng2CarouselamosModule,
     ReactiveFormsModule,
     NgxCarouselModule,
-    CalendarModule,
     RouterModule.forRoot([
       { path : '', redirectTo : 'Home', pathMatch: 'full'},
       { path : 'Home', component : MainpageComponent},
