@@ -27,7 +27,7 @@ import { ProductComponent } from './product/product.component';
 // import { WINDOW_PROVIDERS } from './services/window.service';
 import { FilterService } from './services/data.service';
 import { ProductService } from './services/product.service';
-import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { ProductviewComponent } from './productview/productview.component';
 
 
 
@@ -45,8 +45,8 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     WorksComponent,
     SearchComponent,
     ProductComponent,
-    ProductdetailsComponent,
-    FilterPipe
+    FilterPipe,
+    ProductviewComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +66,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
       { path : 'QuickServices', component : QuickservicesComponent},
       { path : 'search', component : SearchComponent},
       { path : 'Product', component : ProductComponent},
-      { path : 'Productdetails', component : ProductdetailsComponent}
+      { path : 'productview', component : ProductviewComponent}
       
     ])
   ],
