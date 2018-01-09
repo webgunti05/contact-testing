@@ -27,7 +27,6 @@ import { ProductComponent } from './product/product.component';
 // import { WINDOW_PROVIDERS } from './services/window.service';
 import { FilterService } from './services/data.service';
 import { ProductService } from './services/product.service';
-import { ProductviewComponent } from './productview/productview.component';
 
 
 
@@ -46,7 +45,6 @@ import { ProductviewComponent } from './productview/productview.component';
     SearchComponent,
     ProductComponent,
     FilterPipe,
-    ProductviewComponent
   ],
   imports: [
     BrowserModule,
@@ -65,8 +63,7 @@ import { ProductviewComponent } from './productview/productview.component';
       { path : 'ForWorkshops', component : ForworkshopsComponent},
       { path : 'QuickServices', component : QuickservicesComponent},
       { path : 'search', component : SearchComponent},
-      { path : 'Product', component : ProductComponent},
-      { path : 'productview', component : ProductviewComponent}
+      { path : 'Product', component : ProductComponent}
       
     ])
   ],
