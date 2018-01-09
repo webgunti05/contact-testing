@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FilterService } from '../services/data.service';
 import { ProductService } from '../services/product.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'Product',
@@ -21,7 +22,9 @@ export class ProductComponent implements OnInit {
   private searchCities : Array<any>;
 
 
-  constructor(private prodSvc : FilterService, private prolistSvc : ProductService) {
+  constructor(private prodSvc : FilterService,
+              private prolistSvc : ProductService,
+              private router : Router) {
     this.User = {
      
     }
@@ -74,6 +77,9 @@ export class ProductComponent implements OnInit {
   }
   getSearchCities(){
     return this.searchCities;
+  }
+  getPview(){
+    return this.router.navigate(['/', 'productview'])
   }
 
 }
